@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Google/Analytics.h>
+#import "AFNetworking/AFNetworking.h"
 
 @interface PodTest : NSObject
-
+-(BOOL)checkReachbility;
 @end

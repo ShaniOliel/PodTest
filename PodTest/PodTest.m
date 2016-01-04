@@ -9,5 +9,12 @@
 #import "PodTest.h"
 
 @implementation PodTest
-
+-(BOOL)checkReachbility
+{
+    [GAI sharedInstance];
+    NSLog(@"HY");
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    return [[AFNetworkReachabilityManager sharedManager] isReachable];
+    return true;
+}
 @end
