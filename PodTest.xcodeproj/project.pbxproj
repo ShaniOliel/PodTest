@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B808CFB1C3A598D00EB7F5E /* libPodTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B808CFA1C3A598D00EB7F5E /* libPodTest.a */; };
 		2BDABBF41C32D0A700D9FD7A /* PodTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BDABBF31C32D0A700D9FD7A /* PodTest.h */; };
 		2BDABBF61C32D0A700D9FD7A /* PodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDABBF51C32D0A700D9FD7A /* PodTest.m */; };
 		E0F07E9FC02F9C2538D4CAE3 /* Pods_PodTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01110185F5A37A3D2ECEBC4 /* Pods_PodTest.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B808CFA1C3A598D00EB7F5E /* libPodTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPodTest.a; sourceTree = "<group>"; };
 		2BDABBF01C32D0A700D9FD7A /* libPodTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPodTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDABBF31C32D0A700D9FD7A /* PodTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodTest.h; sourceTree = "<group>"; };
 		2BDABBF51C32D0A700D9FD7A /* PodTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodTest.m; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F07E9FC02F9C2538D4CAE3 /* Pods_PodTest.framework in Frameworks */,
+				2B808CFB1C3A598D00EB7F5E /* libPodTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,7 @@
 			children = (
 				2BDABBF31C32D0A700D9FD7A /* PodTest.h */,
 				2BDABBF51C32D0A700D9FD7A /* PodTest.m */,
+				2B808CFA1C3A598D00EB7F5E /* libPodTest.a */,
 			);
 			path = PodTest;
 			sourceTree = "<group>";
@@ -272,6 +276,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FC36442D5689F2ACB6902C7 /* Pods-PodTest.debug.xcconfig */;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodTest",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -282,6 +290,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D0A0EA482EDA30C6B6A4702 /* Pods-PodTest.release.xcconfig */;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodTest",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
